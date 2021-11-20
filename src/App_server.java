@@ -21,7 +21,7 @@ import javax.imageio.ImageIO;
  *
  * @author mukul
  */
-public class chat_server extends javax.swing.JFrame {
+public class App_server extends javax.swing.JFrame {
 
     static ServerSocket serverSocket;
     static Socket clientSocket;
@@ -46,7 +46,7 @@ public class chat_server extends javax.swing.JFrame {
     /**
      * Creates new form chat_server
      */
-    public chat_server() {
+    public App_server() {
         initComponents();
     }
 
@@ -205,7 +205,7 @@ public class chat_server extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new chat_server().setVisible(true);
+                new App_server().setVisible(true);
             }
         });
         String msgin = "";
